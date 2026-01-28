@@ -6,6 +6,8 @@
 
 A native macOS application for organizing and rearranging your menu bar items. Built with SwiftUI for macOS 14+.
 
+![DodoNest Screenshot](assets/screenshot.png)
+
 ## Features
 
 - **Visual menu bar layout** - See all your menu bar items in one place
@@ -165,7 +167,7 @@ MIT License - see [LICENSE](LICENSE) for details.
 ## Acknowledgments
 
 - Inspired by [Bartender](https://www.macbartender.com/) and [Ice](https://github.com/jordanbaird/Ice)
-- Part of the Dodo app family (DodoPulse, DodoTidy, DodoNest)
+- Part of the Dodo app family ([DodoPulse](https://github.com/bluewave-labs/dodopulse), [DodoTidy](https://github.com/bluewave-labs/dodotidy), [DodoClip](https://github.com/bluewave-labs/dodoclip), [DodoNest](https://github.com/bluewave-labs/dodonest))
 
 ## Support
 

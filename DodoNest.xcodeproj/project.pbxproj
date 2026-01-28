@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03F3D99286C13B1A398464A1 /* MenuBarVisualization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D3286691E158588FBE1A47 /* MenuBarVisualization.swift */; };
 		08A7D4C5FB867D0FD65A17C3 /* EventTap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FDA033A94CD1C8EE7828D33 /* EventTap.swift */; };
 		117D4174DDEFEBC85A298CC2 /* MenuBarService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFF9903292A46EC28190795 /* MenuBarService.swift */; };
 		1439BBCC23F2B8F40826646F /* HotkeyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71A413B90AB332D31E0E7AF /* HotkeyService.swift */; };
+		14D3B742362DBDCDFC775C3D /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100A1E5D0511DFB2A5BA4F09 /* Localization.swift */; };
 		30F04A7764D9E8DD5AEFEAF7 /* MenuBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7DFF31124CA0FBB66FED72 /* MenuBarItem.swift */; };
 		31EEACEE35AFE335238FC55E /* MainWindowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59462F82EE98ACB7A06CD5C9 /* MainWindowView.swift */; };
 		3939D9B92169CECF8FD1258C /* GeneralSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE6BCD4C11D6927F94B3194 /* GeneralSettingsView.swift */; };
@@ -18,11 +20,15 @@
 		6BE2401D59CBFEFF9D137FE9 /* MouseCursor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C10655D86B718816F5444EF /* MouseCursor.swift */; };
 		6C7E3B5BAF3BB1B10F027D31 /* AccessibilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF340DB63F8E04D14DA9DF80 /* AccessibilityManager.swift */; };
 		6CC05BD64AE4A18677615CD5 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83D6A224B22F60DD4E43CA6 /* Extensions.swift */; };
+		81B1C9DE4901E69F2283FD10 /* NotchDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3DA85069C852DF3F39A00A /* NotchDetector.swift */; };
+		82D9D9D164536D4EFCFC0530 /* DropZoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C146D436074F0F3E299FF1B /* DropZoneView.swift */; };
 		8666BEC0572AB857D515663F /* DesignSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE31186D1851A4F4B73A59A7 /* DesignSystem.swift */; };
 		8AE6EDE11AC3448BD0BCD63A /* DodoNestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A03AE996930FFBD43BE5395 /* DodoNestApp.swift */; };
 		8DCCF2B77FB0377E8E5D9B36 /* MenuBarItemMover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D5DA8362300F460CEFA22E /* MenuBarItemMover.swift */; };
+		92799996D3346B8BA404635E /* MenuBarItemHider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502547A4F860303AD6774EF0 /* MenuBarItemHider.swift */; };
 		98747DB19284FF4B5C2FFDE0 /* MenuBarPopoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67CD2252205CD72D5985F3D /* MenuBarPopoverView.swift */; };
 		9A0EE9BE47E36833671B3B21 /* TooltipModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99DF59894B315AA2B17A9156 /* TooltipModifier.swift */; };
+		9E24312998020B5961C2CE0A /* ColorSwatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368DC6BDEE18BBDC9FD89EF7 /* ColorSwatch.swift */; };
 		A3A9DAA4D638078EDA1558F4 /* LayoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2A5E71904E49C7B230526C /* LayoutView.swift */; };
 		ACC5A248FFEEA81A7E4DAAD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 120FC550F9636F199ABF93D1 /* AppDelegate.swift */; };
 		AD81AB7B0B8AFDC571B36F03 /* HotkeysView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9346AABAD423D8EA7B301909 /* HotkeysView.swift */; };
@@ -31,21 +37,25 @@
 		C3F2E677B4ADBC4099F28637 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313454F5B6EABE7D56E6E2C5 /* AppSettings.swift */; };
 		C89CF09E45721B5E1073BC09 /* DraggableMenuBarItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A928B7AAAC8BD6AC88072AD /* DraggableMenuBarItemRow.swift */; };
 		D0C2084E6583FB3E84F55C6A /* AppearanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD779A48CB2EBB145F720EFD /* AppearanceView.swift */; };
-		B3994764B58AB02F9FDFB763 /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4F9836CB420968DFD72826 /* Localization.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		100A1E5D0511DFB2A5BA4F09 /* Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
 		120FC550F9636F199ABF93D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		13D5DA8362300F460CEFA22E /* MenuBarItemMover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarItemMover.swift; sourceTree = "<group>"; };
 		1C10655D86B718816F5444EF /* MouseCursor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MouseCursor.swift; sourceTree = "<group>"; };
 		1FDA033A94CD1C8EE7828D33 /* EventTap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTap.swift; sourceTree = "<group>"; };
 		313454F5B6EABE7D56E6E2C5 /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
+		368DC6BDEE18BBDC9FD89EF7 /* ColorSwatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSwatch.swift; sourceTree = "<group>"; };
 		3A2A5E71904E49C7B230526C /* LayoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutView.swift; sourceTree = "<group>"; };
 		4BBA767CC82C60C8C0ADB425 /* Bridging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bridging.swift; sourceTree = "<group>"; };
+		502547A4F860303AD6774EF0 /* MenuBarItemHider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarItemHider.swift; sourceTree = "<group>"; };
 		59462F82EE98ACB7A06CD5C9 /* MainWindowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindowView.swift; sourceTree = "<group>"; };
 		6A03AE996930FFBD43BE5395 /* DodoNestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DodoNestApp.swift; sourceTree = "<group>"; };
 		6A928B7AAAC8BD6AC88072AD /* DraggableMenuBarItemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraggableMenuBarItemRow.swift; sourceTree = "<group>"; };
 		78EAD370B9322FB43F503806 /* AccessibilityPermissionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityPermissionView.swift; sourceTree = "<group>"; };
+		7C146D436074F0F3E299FF1B /* DropZoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropZoneView.swift; sourceTree = "<group>"; };
+		82D3286691E158588FBE1A47 /* MenuBarVisualization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarVisualization.swift; sourceTree = "<group>"; };
 		897113CA976786187795C40A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9346AABAD423D8EA7B301909 /* HotkeysView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotkeysView.swift; sourceTree = "<group>"; };
 		99DF59894B315AA2B17A9156 /* TooltipModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TooltipModifier.swift; sourceTree = "<group>"; };
@@ -60,8 +70,8 @@
 		DEE6BCD4C11D6927F94B3194 /* GeneralSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralSettingsView.swift; sourceTree = "<group>"; };
 		DFFF9903292A46EC28190795 /* MenuBarService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarService.swift; sourceTree = "<group>"; };
 		E83D6A224B22F60DD4E43CA6 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		EE3DA85069C852DF3F39A00A /* NotchDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotchDetector.swift; sourceTree = "<group>"; };
 		FB7DFF31124CA0FBB66FED72 /* MenuBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarItem.swift; sourceTree = "<group>"; };
-		BF4F9836CB420968DFD72826 /* Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -96,9 +106,10 @@
 				AE31186D1851A4F4B73A59A7 /* DesignSystem.swift */,
 				1FDA033A94CD1C8EE7828D33 /* EventTap.swift */,
 				E83D6A224B22F60DD4E43CA6 /* Extensions.swift */,
+				100A1E5D0511DFB2A5BA4F09 /* Localization.swift */,
 				1C10655D86B718816F5444EF /* MouseCursor.swift */,
+				EE3DA85069C852DF3F39A00A /* NotchDetector.swift */,
 				99DF59894B315AA2B17A9156 /* TooltipModifier.swift */,
-				BF4F9836CB420968DFD72826 /* Localization.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -120,8 +131,11 @@
 		94DFBF5714461565DE67215A /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				368DC6BDEE18BBDC9FD89EF7 /* ColorSwatch.swift */,
 				6A928B7AAAC8BD6AC88072AD /* DraggableMenuBarItemRow.swift */,
+				7C146D436074F0F3E299FF1B /* DropZoneView.swift */,
 				C64442BE2E7CE395A6687470 /* MenuBarItemRow.swift */,
+				82D3286691E158588FBE1A47 /* MenuBarVisualization.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -171,6 +185,7 @@
 			children = (
 				AF340DB63F8E04D14DA9DF80 /* AccessibilityManager.swift */,
 				A71A413B90AB332D31E0E7AF /* HotkeyService.swift */,
+				502547A4F860303AD6774EF0 /* MenuBarItemHider.swift */,
 				13D5DA8362300F460CEFA22E /* MenuBarItemMover.swift */,
 				DFFF9903292A46EC28190795 /* MenuBarService.swift */,
 			);
@@ -278,24 +293,29 @@
 				C3F2E677B4ADBC4099F28637 /* AppSettings.swift in Sources */,
 				D0C2084E6583FB3E84F55C6A /* AppearanceView.swift in Sources */,
 				C09F8572B09A616DCB7B71A2 /* Bridging.swift in Sources */,
+				9E24312998020B5961C2CE0A /* ColorSwatch.swift in Sources */,
 				8666BEC0572AB857D515663F /* DesignSystem.swift in Sources */,
 				8AE6EDE11AC3448BD0BCD63A /* DodoNestApp.swift in Sources */,
 				C89CF09E45721B5E1073BC09 /* DraggableMenuBarItemRow.swift in Sources */,
+				82D9D9D164536D4EFCFC0530 /* DropZoneView.swift in Sources */,
 				08A7D4C5FB867D0FD65A17C3 /* EventTap.swift in Sources */,
 				6CC05BD64AE4A18677615CD5 /* Extensions.swift in Sources */,
 				3939D9B92169CECF8FD1258C /* GeneralSettingsView.swift in Sources */,
 				1439BBCC23F2B8F40826646F /* HotkeyService.swift in Sources */,
 				AD81AB7B0B8AFDC571B36F03 /* HotkeysView.swift in Sources */,
 				A3A9DAA4D638078EDA1558F4 /* LayoutView.swift in Sources */,
+				14D3B742362DBDCDFC775C3D /* Localization.swift in Sources */,
 				31EEACEE35AFE335238FC55E /* MainWindowView.swift in Sources */,
 				30F04A7764D9E8DD5AEFEAF7 /* MenuBarItem.swift in Sources */,
+				92799996D3346B8BA404635E /* MenuBarItemHider.swift in Sources */,
 				8DCCF2B77FB0377E8E5D9B36 /* MenuBarItemMover.swift in Sources */,
 				4476157A8ECE555940CAFF25 /* MenuBarItemRow.swift in Sources */,
 				98747DB19284FF4B5C2FFDE0 /* MenuBarPopoverView.swift in Sources */,
 				117D4174DDEFEBC85A298CC2 /* MenuBarService.swift in Sources */,
+				03F3D99286C13B1A398464A1 /* MenuBarVisualization.swift in Sources */,
 				6BE2401D59CBFEFF9D137FE9 /* MouseCursor.swift in Sources */,
+				81B1C9DE4901E69F2283FD10 /* NotchDetector.swift in Sources */,
 				9A0EE9BE47E36833671B3B21 /* TooltipModifier.swift in Sources */,
-				B3994764B58AB02F9FDFB763 /* Localization.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
