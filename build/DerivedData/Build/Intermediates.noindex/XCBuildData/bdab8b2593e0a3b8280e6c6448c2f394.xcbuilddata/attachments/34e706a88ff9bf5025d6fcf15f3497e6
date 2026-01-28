@@ -1,0 +1,130 @@
+{
+  "" : {
+    "const-values" : "/Users/gorkemcetin/dodonest/build/DerivedData/Build/Intermediates.noindex/DodoNest.build/Release/DodoNest.build/Objects-normal/arm64/DodoNest-master.swiftconstvalues",
+    "dependencies" : "/Users/gorkemcetin/dodonest/build/DerivedData/Build/Intermediates.noindex/DodoNest.build/Release/DodoNest.build/Objects-normal/arm64/DodoNest-master.d",
+    "diagnostics" : "/Users/gorkemcetin/dodonest/build/DerivedData/Build/Intermediates.noindex/DodoNest.build/Release/DodoNest.build/Objects-normal/arm64/DodoNest-master.dia",
+    "emit-module-dependencies" : "/Users/gorkemcetin/dodonest/build/DerivedData/Build/Intermediates.noindex/DodoNest.build/Release/DodoNest.build/Objects-normal/arm64/DodoNest-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/gorkemcetin/dodonest/build/DerivedData/Build/Intermediates.noindex/DodoNest.build/Release/DodoNest.build/Objects-normal/arm64/DodoNest-master-emit-module.dia",
+    "swift-dependencies" : "/Users/gorkemcetin/dodonest/build/DerivedData/Build/Intermediates.noindex/DodoNest.build/Release/DodoNest.build/Objects-normal/arm64/DodoNest-master.swiftdeps"
+  },
+  "/Users/gorkemcetin/dodonest/DodoNest/App/AppDelegate.swift" : {
+    "index-unit-output-path" : "/DodoNest.build/Release/DodoNest.build/Objects-normal/arm64/AppDelegate.o",
+    "llvm-bc" : "/Users/gorkemcetin/dodonest/build/DerivedData/Build/Intermediates.noindex/DodoNest.build/Release/DodoNest.build/Objects-normal/arm64/AppDelegate.bc",
+    "object" : "/Users/gorkemcetin/dodonest/build/DerivedData/Build/Intermediates.noindex/DodoNest.build/Release/DodoNest.build/Objects-normal/arm64/AppDelegate.o"
+  },
+  "/Users/gorkemcetin/dodonest/DodoNest/App/DodoNestApp.swift" : {
+    "index-unit-output-path" : "/DodoNest.build/Release/DodoNest.build/Objects-normal/arm64/DodoNestApp.o",
+    "llvm-bc" : "/Users/gorkemcetin/dodonest/build/DerivedData/Build/Intermediates.noindex/DodoNest.build/Release/DodoNest.build/Objects-normal/arm64/DodoNestApp.bc",
+    "object" : "/Users/gorkemcetin/dodonest/build/DerivedData/Build/Intermediates.noindex/DodoNest.build/Release/DodoNest.build/Objects-normal/arm64/DodoNestApp.o"
+  },
+  "/Users/gorkemcetin/dodonest/DodoNest/Models/AppSettings.swift" : {
+    "index-unit-output-path" : "/DodoNest.build/Release/DodoNest.build/Objects-normal/arm64/AppSettings.o",
+    "llvm-bc" : "/Users/gorkemcetin/dodonest/build/DerivedData/Build/Intermediates.noindex/DodoNest.build/Release/DodoNest.build/Objects-normal/arm64/AppSettings.bc",
+    "object" : "/Users/gorkemcetin/dodonest/build/DerivedData/Build/Intermediates.noindex/DodoNest.build/Release/DodoNest.build/Objects-normal/arm64/AppSettings.o"
+  },
+  "/Users/gorkemcetin/dodonest/DodoNest/Models/MenuBarItem.swift" : {
+    "index-unit-output-path" : "/DodoNest.build/Release/DodoNest.build/Objects-normal/arm64/MenuBarItem.o",
+    "llvm-bc" : "/Users/gorkemcetin/dodonest/build/DerivedData/Build/Intermediates.noindex/DodoNest.build/Release/DodoNest.build/Objects-normal/arm64/MenuBarItem.bc",
+    "object" : "/Users/gorkemcetin/dodonest/build/DerivedData/Build/Intermediates.noindex/DodoNest.build/Release/DodoNest.build/Objects-normal/arm64/MenuBarItem.o"
+  },
+  "/Users/gorkemcetin/dodonest/DodoNest/Services/AccessibilityManager.swift" : {
+    "index-unit-output-path" : "/DodoNest.build/Release/DodoNest.build/Objects-normal/arm64/AccessibilityManager.o",
+    "llvm-bc" : "/Users/gorkemcetin/dodonest/build/DerivedData/Build/Intermediates.noindex/DodoNest.build/Release/DodoNest.build/Objects-normal/arm64/AccessibilityManager.bc",
+    "object" : "/Users/gorkemcetin/dodonest/build/DerivedData/Build/Intermediates.noindex/DodoNest.build/Release/DodoNest.build/Objects-normal/arm64/AccessibilityManager.o"
+  },
+  "/Users/gorkemcetin/dodonest/DodoNest/Services/HotkeyService.swift" : {
+    "index-unit-output-path" : "/DodoNest.build/Release/DodoNest.build/Objects-normal/arm64/HotkeyService.o",
+    "llvm-bc" : "/Users/gorkemcetin/dodonest/build/DerivedData/Build/Intermediates.noindex/DodoNest.build/Release/DodoNest.build/Objects-normal/arm64/HotkeyService.bc",
+    "object" : "/Users/gorkemcetin/dodonest/build/DerivedData/Build/Intermediates.noindex/DodoNest.build/Release/DodoNest.build/Objects-normal/arm64/HotkeyService.o"
+  },
+  "/Users/gorkemcetin/dodonest/DodoNest/Services/MenuBarItemMover.swift" : {
+    "index-unit-output-path" : "/DodoNest.build/Release/DodoNest.build/Objects-normal/arm64/MenuBarItemMover.o",
+    "llvm-bc" : "/Users/gorkemcetin/dodonest/build/DerivedData/Build/Intermediates.noindex/DodoNest.build/Release/DodoNest.build/Objects-normal/arm64/MenuBarItemMover.bc",
+    "object" : "/Users/gorkemcetin/dodonest/build/DerivedData/Build/Intermediates.noindex/DodoNest.build/Release/DodoNest.build/Objects-normal/arm64/MenuBarItemMover.o"
+  },
+  "/Users/gorkemcetin/dodonest/DodoNest/Services/MenuBarService.swift" : {
+    "index-unit-output-path" : "/DodoNest.build/Release/DodoNest.build/Objects-normal/arm64/MenuBarService.o",
+    "llvm-bc" : "/Users/gorkemcetin/dodonest/build/DerivedData/Build/Intermediates.noindex/DodoNest.build/Release/DodoNest.build/Objects-normal/arm64/MenuBarService.bc",
+    "object" : "/Users/gorkemcetin/dodonest/build/DerivedData/Build/Intermediates.noindex/DodoNest.build/Release/DodoNest.build/Objects-normal/arm64/MenuBarService.o"
+  },
+  "/Users/gorkemcetin/dodonest/DodoNest/Utilities/Bridging.swift" : {
+    "index-unit-output-path" : "/DodoNest.build/Release/DodoNest.build/Objects-normal/arm64/Bridging.o",
+    "llvm-bc" : "/Users/gorkemcetin/dodonest/build/DerivedData/Build/Intermediates.noindex/DodoNest.build/Release/DodoNest.build/Objects-normal/arm64/Bridging.bc",
+    "object" : "/Users/gorkemcetin/dodonest/build/DerivedData/Build/Intermediates.noindex/DodoNest.build/Release/DodoNest.build/Objects-normal/arm64/Bridging.o"
+  },
+  "/Users/gorkemcetin/dodonest/DodoNest/Utilities/DesignSystem.swift" : {
+    "index-unit-output-path" : "/DodoNest.build/Release/DodoNest.build/Objects-normal/arm64/DesignSystem.o",
+    "llvm-bc" : "/Users/gorkemcetin/dodonest/build/DerivedData/Build/Intermediates.noindex/DodoNest.build/Release/DodoNest.build/Objects-normal/arm64/DesignSystem.bc",
+    "object" : "/Users/gorkemcetin/dodonest/build/DerivedData/Build/Intermediates.noindex/DodoNest.build/Release/DodoNest.build/Objects-normal/arm64/DesignSystem.o"
+  },
+  "/Users/gorkemcetin/dodonest/DodoNest/Utilities/EventTap.swift" : {
+    "index-unit-output-path" : "/DodoNest.build/Release/DodoNest.build/Objects-normal/arm64/EventTap.o",
+    "llvm-bc" : "/Users/gorkemcetin/dodonest/build/DerivedData/Build/Intermediates.noindex/DodoNest.build/Release/DodoNest.build/Objects-normal/arm64/EventTap.bc",
+    "object" : "/Users/gorkemcetin/dodonest/build/DerivedData/Build/Intermediates.noindex/DodoNest.build/Release/DodoNest.build/Objects-normal/arm64/EventTap.o"
+  },
+  "/Users/gorkemcetin/dodonest/DodoNest/Utilities/Extensions.swift" : {
+    "index-unit-output-path" : "/DodoNest.build/Release/DodoNest.build/Objects-normal/arm64/Extensions.o",
+    "llvm-bc" : "/Users/gorkemcetin/dodonest/build/DerivedData/Build/Intermediates.noindex/DodoNest.build/Release/DodoNest.build/Objects-normal/arm64/Extensions.bc",
+    "object" : "/Users/gorkemcetin/dodonest/build/DerivedData/Build/Intermediates.noindex/DodoNest.build/Release/DodoNest.build/Objects-normal/arm64/Extensions.o"
+  },
+  "/Users/gorkemcetin/dodonest/DodoNest/Utilities/MouseCursor.swift" : {
+    "index-unit-output-path" : "/DodoNest.build/Release/DodoNest.build/Objects-normal/arm64/MouseCursor.o",
+    "llvm-bc" : "/Users/gorkemcetin/dodonest/build/DerivedData/Build/Intermediates.noindex/DodoNest.build/Release/DodoNest.build/Objects-normal/arm64/MouseCursor.bc",
+    "object" : "/Users/gorkemcetin/dodonest/build/DerivedData/Build/Intermediates.noindex/DodoNest.build/Release/DodoNest.build/Objects-normal/arm64/MouseCursor.o"
+  },
+  "/Users/gorkemcetin/dodonest/DodoNest/Utilities/TooltipModifier.swift" : {
+    "index-unit-output-path" : "/DodoNest.build/Release/DodoNest.build/Objects-normal/arm64/TooltipModifier.o",
+    "llvm-bc" : "/Users/gorkemcetin/dodonest/build/DerivedData/Build/Intermediates.noindex/DodoNest.build/Release/DodoNest.build/Objects-normal/arm64/TooltipModifier.bc",
+    "object" : "/Users/gorkemcetin/dodonest/build/DerivedData/Build/Intermediates.noindex/DodoNest.build/Release/DodoNest.build/Objects-normal/arm64/TooltipModifier.o"
+  },
+  "/Users/gorkemcetin/dodonest/DodoNest/Views/Components/DraggableMenuBarItemRow.swift" : {
+    "index-unit-output-path" : "/DodoNest.build/Release/DodoNest.build/Objects-normal/arm64/DraggableMenuBarItemRow.o",
+    "llvm-bc" : "/Users/gorkemcetin/dodonest/build/DerivedData/Build/Intermediates.noindex/DodoNest.build/Release/DodoNest.build/Objects-normal/arm64/DraggableMenuBarItemRow.bc",
+    "object" : "/Users/gorkemcetin/dodonest/build/DerivedData/Build/Intermediates.noindex/DodoNest.build/Release/DodoNest.build/Objects-normal/arm64/DraggableMenuBarItemRow.o"
+  },
+  "/Users/gorkemcetin/dodonest/DodoNest/Views/Components/MenuBarItemRow.swift" : {
+    "index-unit-output-path" : "/DodoNest.build/Release/DodoNest.build/Objects-normal/arm64/MenuBarItemRow.o",
+    "llvm-bc" : "/Users/gorkemcetin/dodonest/build/DerivedData/Build/Intermediates.noindex/DodoNest.build/Release/DodoNest.build/Objects-normal/arm64/MenuBarItemRow.bc",
+    "object" : "/Users/gorkemcetin/dodonest/build/DerivedData/Build/Intermediates.noindex/DodoNest.build/Release/DodoNest.build/Objects-normal/arm64/MenuBarItemRow.o"
+  },
+  "/Users/gorkemcetin/dodonest/DodoNest/Views/MainWindow/AppearanceView.swift" : {
+    "index-unit-output-path" : "/DodoNest.build/Release/DodoNest.build/Objects-normal/arm64/AppearanceView.o",
+    "llvm-bc" : "/Users/gorkemcetin/dodonest/build/DerivedData/Build/Intermediates.noindex/DodoNest.build/Release/DodoNest.build/Objects-normal/arm64/AppearanceView.bc",
+    "object" : "/Users/gorkemcetin/dodonest/build/DerivedData/Build/Intermediates.noindex/DodoNest.build/Release/DodoNest.build/Objects-normal/arm64/AppearanceView.o"
+  },
+  "/Users/gorkemcetin/dodonest/DodoNest/Views/MainWindow/GeneralSettingsView.swift" : {
+    "index-unit-output-path" : "/DodoNest.build/Release/DodoNest.build/Objects-normal/arm64/GeneralSettingsView.o",
+    "llvm-bc" : "/Users/gorkemcetin/dodonest/build/DerivedData/Build/Intermediates.noindex/DodoNest.build/Release/DodoNest.build/Objects-normal/arm64/GeneralSettingsView.bc",
+    "object" : "/Users/gorkemcetin/dodonest/build/DerivedData/Build/Intermediates.noindex/DodoNest.build/Release/DodoNest.build/Objects-normal/arm64/GeneralSettingsView.o"
+  },
+  "/Users/gorkemcetin/dodonest/DodoNest/Views/MainWindow/HotkeysView.swift" : {
+    "index-unit-output-path" : "/DodoNest.build/Release/DodoNest.build/Objects-normal/arm64/HotkeysView.o",
+    "llvm-bc" : "/Users/gorkemcetin/dodonest/build/DerivedData/Build/Intermediates.noindex/DodoNest.build/Release/DodoNest.build/Objects-normal/arm64/HotkeysView.bc",
+    "object" : "/Users/gorkemcetin/dodonest/build/DerivedData/Build/Intermediates.noindex/DodoNest.build/Release/DodoNest.build/Objects-normal/arm64/HotkeysView.o"
+  },
+  "/Users/gorkemcetin/dodonest/DodoNest/Views/MainWindow/LayoutView.swift" : {
+    "index-unit-output-path" : "/DodoNest.build/Release/DodoNest.build/Objects-normal/arm64/LayoutView.o",
+    "llvm-bc" : "/Users/gorkemcetin/dodonest/build/DerivedData/Build/Intermediates.noindex/DodoNest.build/Release/DodoNest.build/Objects-normal/arm64/LayoutView.bc",
+    "object" : "/Users/gorkemcetin/dodonest/build/DerivedData/Build/Intermediates.noindex/DodoNest.build/Release/DodoNest.build/Objects-normal/arm64/LayoutView.o"
+  },
+  "/Users/gorkemcetin/dodonest/DodoNest/Views/MainWindow/MainWindowView.swift" : {
+    "index-unit-output-path" : "/DodoNest.build/Release/DodoNest.build/Objects-normal/arm64/MainWindowView.o",
+    "llvm-bc" : "/Users/gorkemcetin/dodonest/build/DerivedData/Build/Intermediates.noindex/DodoNest.build/Release/DodoNest.build/Objects-normal/arm64/MainWindowView.bc",
+    "object" : "/Users/gorkemcetin/dodonest/build/DerivedData/Build/Intermediates.noindex/DodoNest.build/Release/DodoNest.build/Objects-normal/arm64/MainWindowView.o"
+  },
+  "/Users/gorkemcetin/dodonest/DodoNest/Views/MenuBar/MenuBarPopoverView.swift" : {
+    "index-unit-output-path" : "/DodoNest.build/Release/DodoNest.build/Objects-normal/arm64/MenuBarPopoverView.o",
+    "llvm-bc" : "/Users/gorkemcetin/dodonest/build/DerivedData/Build/Intermediates.noindex/DodoNest.build/Release/DodoNest.build/Objects-normal/arm64/MenuBarPopoverView.bc",
+    "object" : "/Users/gorkemcetin/dodonest/build/DerivedData/Build/Intermediates.noindex/DodoNest.build/Release/DodoNest.build/Objects-normal/arm64/MenuBarPopoverView.o"
+  },
+  "/Users/gorkemcetin/dodonest/DodoNest/Views/Permissions/AccessibilityPermissionView.swift" : {
+    "index-unit-output-path" : "/DodoNest.build/Release/DodoNest.build/Objects-normal/arm64/AccessibilityPermissionView.o",
+    "llvm-bc" : "/Users/gorkemcetin/dodonest/build/DerivedData/Build/Intermediates.noindex/DodoNest.build/Release/DodoNest.build/Objects-normal/arm64/AccessibilityPermissionView.bc",
+    "object" : "/Users/gorkemcetin/dodonest/build/DerivedData/Build/Intermediates.noindex/DodoNest.build/Release/DodoNest.build/Objects-normal/arm64/AccessibilityPermissionView.o"
+  },
+  "/Users/gorkemcetin/dodonest/build/DerivedData/Build/Intermediates.noindex/DodoNest.build/Release/DodoNest.build/DerivedSources/GeneratedAssetSymbols.swift" : {
+    "index-unit-output-path" : "/DodoNest.build/Release/DodoNest.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "llvm-bc" : "/Users/gorkemcetin/dodonest/build/DerivedData/Build/Intermediates.noindex/DodoNest.build/Release/DodoNest.build/Objects-normal/arm64/GeneratedAssetSymbols.bc",
+    "object" : "/Users/gorkemcetin/dodonest/build/DerivedData/Build/Intermediates.noindex/DodoNest.build/Release/DodoNest.build/Objects-normal/arm64/GeneratedAssetSymbols.o"
+  }
+}
