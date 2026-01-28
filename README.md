@@ -12,7 +12,8 @@ A native macOS application for organizing and rearranging your menu bar items. B
 - **Drag-and-drop reordering** - Drag items onto each other to swap their positions in the actual menu bar
 - **Search functionality** - Quickly find any menu bar item by name
 - **Real-time sync** - Items are displayed in their actual menu bar order
-- **Menu bar icon** - Quick access from the menu bar with system metrics
+- **Menu bar icon** - Quick access from the menu bar
+- **Multilingual support** - English, Turkish, German, French, Spanish, Japanese, Chinese
 
 ## How it works
 
@@ -25,21 +26,24 @@ DodoNest uses macOS Accessibility APIs to simulate Command+drag operations, whic
 
 ## Installation
 
-### Homebrew (Coming soon)
+### Homebrew
 
 ```bash
 brew tap bluewave-labs/dodonest
 brew install --cask dodonest
-xattr -cr /Applications/DodoNest.app
 ```
+
+The Homebrew formula automatically removes the quarantine attribute, so the app will open without issues.
 
 ### Manual installation
 
-1. Download the latest DMG from [Releases](https://github.com/bluewave-labs/DodoNest/releases)
+1. Download the latest DMG from [Releases](https://github.com/bluewave-labs/dodonest/releases)
 2. Open the DMG and drag DodoNest to Applications
-3. Right-click and select "Open" on first launch (required for unsigned apps)
+3. Right-click and select "Open" on first launch, or run:
 
-Or run: `xattr -cr /Applications/DodoNest.app`
+```bash
+xattr -cr /Applications/DodoNest.app
+```
 
 ## Usage
 
@@ -121,6 +125,7 @@ DodoNest/
 ├── Utilities/
 │   ├── Bridging.swift             # Window management APIs
 │   ├── DesignSystem.swift         # Colors, fonts, styles
+│   ├── Localization.swift         # Multilingual support
 │   └── Extensions.swift
 └── Resources/
     └── Assets.xcassets
