@@ -6,6 +6,9 @@
 
 A native macOS application for organizing and rearranging your menu bar items. Built with SwiftUI for macOS 14+.
 
+<img width="1031" height="699" alt="image" src="https://github.com/user-attachments/assets/ca4283e0-ae64-4af6-85fd-cf37a69db7e1" />
+
+
 ## Features
 
 - **Visual menu bar layout** - See all your menu bar items in one place
