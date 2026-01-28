@@ -3,6 +3,7 @@ import SwiftUI
 struct MainWindowView: View {
     @State private var selectedItem: NavigationItem = .layout
     @State private var menuBarService = MenuBarService.shared
+    @State private var currentLanguage = L10n.current
 
     var body: some View {
         HStack(spacing: 0) {
@@ -13,6 +14,9 @@ struct MainWindowView: View {
             if let item = notification.object as? NavigationItem {
                 selectedItem = item
             }
+        }
+        .onReceive(NotificationCenter.default.publisher(for: .languageChanged)) { _ in
+            currentLanguage = L10n.current
         }
     }
 

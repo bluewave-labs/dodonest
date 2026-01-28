@@ -4,6 +4,7 @@ import SwiftUI
 struct AccessibilityPermissionView: View {
     @ObservedObject private var accessibilityManager = AccessibilityManager.shared
     @Binding var isPresented: Bool
+    @State private var currentLanguage = L10n.current
 
     var body: some View {
         VStack(spacing: 24) {
@@ -13,11 +14,11 @@ struct AccessibilityPermissionView: View {
                     .font(.system(size: 48))
                     .foregroundColor(.dodoWarning)
 
-                Text("Accessibility permission required")
+                Text(L10n.accessibilityPermissionRequired)
                     .font(.system(size: 20, weight: .semibold))
                     .foregroundColor(.dodoTextPrimary)
 
-                Text("DodoNest needs Accessibility access to move and arrange your menu bar items.")
+                Text(L10n.accessibilityDescription)
                     .font(.dodoBody)
                     .foregroundColor(.dodoTextSecondary)
                     .multilineTextAlignment(.center)
@@ -25,12 +26,12 @@ struct AccessibilityPermissionView: View {
 
                 // Important note about restart
                 VStack(spacing: 6) {
-                    Text("If already enabled but not working:")
+                    Text(L10n.ifAlreadyEnabledNotWorking)
                         .font(.dodoCaption)
                         .fontWeight(.medium)
                         .foregroundColor(.dodoTextSecondary)
 
-                    Text("1. Remove DodoNest from Accessibility list\n2. Click \"Show in Finder\" below, then drag the app to Accessibility\n3. Restart the app")
+                    Text(L10n.accessibilitySteps)
                         .font(.dodoCaption)
                         .foregroundColor(.dodoTextTertiary)
                         .multilineTextAlignment(.center)
@@ -49,13 +50,13 @@ struct AccessibilityPermissionView: View {
                     HStack(spacing: 8) {
                         Image(systemName: "checkmark.circle.fill")
                             .foregroundColor(.dodoSuccess)
-                        Text("Permission granted!")
+                        Text(L10n.permissionGranted)
                             .font(.dodoSubheadline)
                             .foregroundColor(.dodoSuccess)
                     }
                     .padding(.bottom, 8)
 
-                    Button("Continue") {
+                    Button(L10n.continueButton) {
                         isPresented = false
                     }
                     .buttonStyle(.dodoPrimary)
@@ -66,24 +67,24 @@ struct AccessibilityPermissionView: View {
                     } label: {
                         HStack {
                             Image(systemName: "gear")
-                            Text("Open System Settings")
+                            Text(L10n.openSystemSettings)
                         }
                     }
                     .buttonStyle(.dodoPrimary)
 
                     HStack(spacing: 12) {
-                        Button("Show in Finder") {
+                        Button(L10n.showInFinder) {
                             showAppInFinder()
                         }
                         .buttonStyle(.dodoSecondary)
 
-                        Button("Restart DodoNest") {
+                        Button(L10n.restartApp) {
                             restartApp()
                         }
                         .buttonStyle(.dodoSecondary)
                     }
 
-                    Button("I'll do this later") {
+                    Button(L10n.illDoThisLater) {
                         isPresented = false
                     }
                     .buttonStyle(.plain)
@@ -95,6 +96,9 @@ struct AccessibilityPermissionView: View {
         }
         .frame(width: 420, height: 380)
         .background(Color.dodoBackground)
+        .onReceive(NotificationCenter.default.publisher(for: .languageChanged)) { _ in
+            currentLanguage = L10n.current
+        }
     }
 
     private func restartApp() {
@@ -125,6 +129,7 @@ struct AccessibilityPermissionView: View {
 struct AccessibilityBanner: View {
     @ObservedObject private var accessibilityManager = AccessibilityManager.shared
     @State private var showPermissionSheet = false
+    @State private var currentLanguage = L10n.current
 
     var body: some View {
         if !accessibilityManager.isAccessibilityGranted {
@@ -133,18 +138,18 @@ struct AccessibilityBanner: View {
                     .foregroundColor(.dodoWarning)
 
                 VStack(alignment: .leading, spacing: 2) {
-                    Text("Accessibility permission required")
+                    Text(L10n.accessibilityPermissionRequired)
                         .font(.dodoSubheadline)
                         .foregroundColor(.dodoTextPrimary)
 
-                    Text("Enable in System Settings, then restart app")
+                    Text(L10n.enableThenRestart)
                         .font(.dodoCaption)
                         .foregroundColor(.dodoTextSecondary)
                 }
 
                 Spacer()
 
-                Button("Grant access") {
+                Button(L10n.grantAccess) {
                     showPermissionSheet = true
                 }
                 .buttonStyle(.dodoPrimary)
@@ -158,6 +163,9 @@ struct AccessibilityBanner: View {
             )
             .sheet(isPresented: $showPermissionSheet) {
                 AccessibilityPermissionView(isPresented: $showPermissionSheet)
+            }
+            .onReceive(NotificationCenter.default.publisher(for: .languageChanged)) { _ in
+                currentLanguage = L10n.current
             }
         }
     }

@@ -5,6 +5,7 @@ struct LayoutView: View {
     @State private var items: [MenuBarItem] = []
     @State private var isMovingItem = false
     @State private var movingItemName: String?
+    @State private var currentLanguage = L10n.current
 
     private var menuBarService: MenuBarService { MenuBarService.shared }
     private var itemMover: MenuBarItemMover { MenuBarItemMover.shared }
@@ -25,19 +26,22 @@ struct LayoutView: View {
         .onReceive(NotificationCenter.default.publisher(for: .menuBarLayoutChanged)) { _ in
             items = menuBarService.items
         }
+        .onReceive(NotificationCenter.default.publisher(for: .languageChanged)) { _ in
+            currentLanguage = L10n.current
+        }
     }
 
     private var header: some View {
         VStack(alignment: .leading, spacing: 4) {
             HStack {
-                Text("Menu bar layout")
+                Text(L10n.menuBarLayout)
                     .font(.dodoTitle)
                     .foregroundColor(.dodoTextPrimary)
 
-                InfoTooltip(text: "Drag items to reorder them. DodoNest will move them in your actual menu bar.")
+                InfoTooltip(text: L10n.dragItemInstruction)
             }
 
-            Text("Drag and drop to rearrange your menu bar items")
+            Text(L10n.dragAndDropToRearrange)
                 .font(.dodoBody)
                 .foregroundColor(.dodoTextSecondary)
         }
@@ -48,7 +52,7 @@ struct LayoutView: View {
             Image(systemName: "magnifyingglass")
                 .foregroundColor(.dodoTextTertiary)
 
-            TextField("Search menu bar items...", text: $searchText)
+            TextField(L10n.searchMenuBarItems, text: $searchText)
                 .textFieldStyle(.plain)
                 .foregroundColor(.dodoTextPrimary)
 
@@ -86,18 +90,18 @@ struct LayoutView: View {
                 Image(systemName: "menubar.rectangle")
                     .foregroundColor(.dodoPrimary)
 
-                Text("Menu bar items")
+                Text(L10n.menuBarItems)
                     .font(.dodoHeadline)
                     .foregroundColor(.dodoTextPrimary)
 
                 Spacer()
 
-                Text("\(filteredItems.count) items")
+                Text("\(filteredItems.count) \(L10n.items)")
                     .font(.dodoCaption)
                     .foregroundColor(.dodoTextTertiary)
             }
 
-            Text("Items currently in your menu bar")
+            Text(L10n.itemsCurrentlyInMenuBar)
                 .font(.dodoCaption)
                 .foregroundColor(.dodoTextSecondary)
 
@@ -117,7 +121,7 @@ struct LayoutView: View {
             HStack(spacing: 8) {
                 Image(systemName: "hand.draw")
                     .foregroundColor(.dodoPrimary)
-                Text("How to reorder menu bar items")
+                Text(L10n.howToReorderItems)
                     .font(.dodoSubheadline)
                     .foregroundColor(.dodoTextPrimary)
             }
@@ -125,11 +129,11 @@ struct LayoutView: View {
             VStack(alignment: .leading, spacing: 8) {
                 instructionRow(
                     number: "1",
-                    text: "Drag an item above onto another item to swap their positions"
+                    text: L10n.dragItemInstruction
                 )
                 instructionRow(
                     number: "2",
-                    text: "Or hold ⌘ Command and drag items directly in your actual menu bar"
+                    text: L10n.commandDragInstruction
                 )
             }
         }
@@ -212,7 +216,7 @@ struct LayoutView: View {
                 ProgressView()
                     .progressViewStyle(CircularProgressViewStyle(tint: .white))
 
-                Text("Moving \(movingItemName ?? "item")...")
+                Text("\(L10n.movingItem) \(movingItemName ?? "")...")
                     .font(.dodoSubheadline)
                     .foregroundColor(.white)
             }
@@ -225,7 +229,7 @@ struct LayoutView: View {
                 .font(.system(size: 24))
                 .foregroundColor(.dodoTextTertiary)
 
-            Text(searchText.isEmpty ? "No menu bar items detected" : "No items match your search")
+            Text(searchText.isEmpty ? L10n.noMenuBarItemsDetected : L10n.noItemsMatchSearch)
                 .font(.dodoCaption)
                 .foregroundColor(.dodoTextTertiary)
                 .multilineTextAlignment(.center)

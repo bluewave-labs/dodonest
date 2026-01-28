@@ -31,6 +31,7 @@
 		C3F2E677B4ADBC4099F28637 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313454F5B6EABE7D56E6E2C5 /* AppSettings.swift */; };
 		C89CF09E45721B5E1073BC09 /* DraggableMenuBarItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A928B7AAAC8BD6AC88072AD /* DraggableMenuBarItemRow.swift */; };
 		D0C2084E6583FB3E84F55C6A /* AppearanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD779A48CB2EBB145F720EFD /* AppearanceView.swift */; };
+		B3994764B58AB02F9FDFB763 /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4F9836CB420968DFD72826 /* Localization.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +61,7 @@
 		DFFF9903292A46EC28190795 /* MenuBarService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarService.swift; sourceTree = "<group>"; };
 		E83D6A224B22F60DD4E43CA6 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		FB7DFF31124CA0FBB66FED72 /* MenuBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarItem.swift; sourceTree = "<group>"; };
+		BF4F9836CB420968DFD72826 /* Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -96,6 +98,7 @@
 				E83D6A224B22F60DD4E43CA6 /* Extensions.swift */,
 				1C10655D86B718816F5444EF /* MouseCursor.swift */,
 				99DF59894B315AA2B17A9156 /* TooltipModifier.swift */,
+				BF4F9836CB420968DFD72826 /* Localization.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -292,6 +295,7 @@
 				117D4174DDEFEBC85A298CC2 /* MenuBarService.swift in Sources */,
 				6BE2401D59CBFEFF9D137FE9 /* MouseCursor.swift in Sources */,
 				9A0EE9BE47E36833671B3B21 /* TooltipModifier.swift in Sources */,
+				B3994764B58AB02F9FDFB763 /* Localization.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

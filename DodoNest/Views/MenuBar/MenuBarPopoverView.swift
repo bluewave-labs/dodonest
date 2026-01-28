@@ -3,6 +3,7 @@ import SwiftUI
 struct MenuBarPopoverView: View {
     @State private var menuBarService = MenuBarService.shared
     @State private var searchText = ""
+    @State private var currentLanguage = L10n.current
 
     var body: some View {
         VStack(spacing: 0) {
@@ -12,6 +13,9 @@ struct MenuBarPopoverView: View {
         }
         .frame(width: 320, height: 400)
         .background(Color.dodoBackground)
+        .onReceive(NotificationCenter.default.publisher(for: .languageChanged)) { _ in
+            currentLanguage = L10n.current
+        }
     }
 
     // MARK: - Search Bar
@@ -21,7 +25,7 @@ struct MenuBarPopoverView: View {
             Image(systemName: "magnifyingglass")
                 .foregroundColor(.dodoTextTertiary)
 
-            TextField("Search menu bar items...", text: $searchText)
+            TextField(L10n.searchMenuBarItems, text: $searchText)
                 .textFieldStyle(.plain)
                 .foregroundColor(.dodoTextPrimary)
 
@@ -64,18 +68,44 @@ struct MenuBarPopoverView: View {
 
     private var footer: some View {
         HStack {
-            Text("\(menuBarService.items.count) items")
+            Text("\(menuBarService.items.count) \(L10n.items)")
                 .font(.dodoCaption)
                 .foregroundColor(.dodoTextTertiary)
 
             Spacer()
+
+            // Language menu
+            Menu {
+                ForEach(Language.allCases, id: \.rawValue) { lang in
+                    Button {
+                        L10n.current = lang
+                    } label: {
+                        HStack {
+                            Text("\(lang.flag) \(lang.displayName)")
+                            if lang == currentLanguage {
+                                Image(systemName: "checkmark")
+                            }
+                        }
+                    }
+                }
+            } label: {
+                HStack(spacing: 4) {
+                    Text(currentLanguage.flag)
+                    Image(systemName: "chevron.up.chevron.down")
+                        .font(.system(size: 8))
+                }
+                .font(.dodoCaption)
+                .foregroundColor(.dodoTextSecondary)
+            }
+            .menuStyle(.borderlessButton)
+            .fixedSize()
 
             Button {
                 openMainWindow()
             } label: {
                 HStack(spacing: 4) {
                     Image(systemName: "gear")
-                    Text("Settings")
+                    Text(L10n.settings)
                 }
                 .font(.dodoCaption)
                 .foregroundColor(.dodoTextSecondary)

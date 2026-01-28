@@ -27,7 +27,7 @@ struct MenuBarItemRow: View {
 
             // System badge
             if item.isSystemItem {
-                Text("System")
+                Text(L10n.system)
                     .font(.dodoCaptionSmall)
                     .foregroundColor(.dodoTextTertiary)
                     .padding(.horizontal, 6)

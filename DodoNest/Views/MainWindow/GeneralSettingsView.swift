@@ -2,6 +2,7 @@ import SwiftUI
 
 struct GeneralSettingsView: View {
     @State private var settings = AppSettings.shared
+    @State private var currentLanguage = L10n.current
 
     var body: some View {
         ScrollView {
@@ -17,15 +18,18 @@ struct GeneralSettingsView: View {
             .padding(DodoNestDimensions.cardPaddingLarge)
         }
         .background(Color.dodoBackground)
+        .onReceive(NotificationCenter.default.publisher(for: .languageChanged)) { _ in
+            currentLanguage = L10n.current
+        }
     }
 
     private var header: some View {
         VStack(alignment: .leading, spacing: 4) {
-            Text("Settings")
+            Text(L10n.settings)
                 .font(.dodoTitle)
                 .foregroundColor(.dodoTextPrimary)
 
-            Text("Configure DodoNest behavior")
+            Text(L10n.configureDodoNestBehavior)
                 .font(.dodoBody)
                 .foregroundColor(.dodoTextSecondary)
         }
@@ -34,10 +38,10 @@ struct GeneralSettingsView: View {
     // MARK: - Startup Section
 
     private var startupSection: some View {
-        settingsCard(title: "Startup", icon: "power.circle.fill") {
+        settingsCard(title: L10n.startup, icon: "power.circle.fill") {
             settingsToggleRow(
-                title: "Launch at login",
-                description: "Start DodoNest automatically when you log in",
+                title: L10n.launchAtLogin,
+                description: L10n.automaticallyStartWhenLogin,
                 isOn: $settings.launchAtLogin
             )
 
@@ -45,8 +49,8 @@ struct GeneralSettingsView: View {
                 .background(Color.dodoBorder.opacity(0.2))
 
             settingsToggleRow(
-                title: "Show DodoNest icon in menu bar",
-                description: "Display the DodoNest icon for quick access",
+                title: L10n.showMenuBarIcon,
+                description: L10n.displayIconInMenuBar,
                 isOn: $settings.showDodoNestIcon
             )
         }
@@ -59,12 +63,12 @@ struct GeneralSettingsView: View {
             HStack(spacing: 8) {
                 Image(systemName: "sparkles")
                     .foregroundColor(.dodoTextTertiary)
-                Text("More settings coming soon")
+                Text(L10n.moreSettingsComingSoon)
                     .font(.dodoSubheadline)
                     .foregroundColor(.dodoTextTertiary)
             }
 
-            Text("Click-to-reveal, hover-to-reveal, auto-rehide, and DodoNest bar options are planned for a future update.")
+            Text(L10n.moreSettingsDescription)
                 .font(.dodoCaption)
                 .foregroundColor(.dodoTextTertiary)
         }
@@ -78,7 +82,7 @@ struct GeneralSettingsView: View {
 
     private var resetSection: some View {
         HStack {
-            Button("Reset all settings") {
+            Button(L10n.resetAllSettings) {
                 settings.resetToDefaults()
             }
             .buttonStyle(.dodoDanger)

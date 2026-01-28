@@ -1,6 +1,8 @@
 import SwiftUI
 
 struct HotkeysView: View {
+    @State private var currentLanguage = L10n.current
+
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: DodoNestDimensions.spacingLarge) {
@@ -12,15 +14,18 @@ struct HotkeysView: View {
             .padding(DodoNestDimensions.cardPaddingLarge)
         }
         .background(Color.dodoBackground)
+        .onReceive(NotificationCenter.default.publisher(for: .languageChanged)) { _ in
+            currentLanguage = L10n.current
+        }
     }
 
     private var header: some View {
         VStack(alignment: .leading, spacing: 4) {
-            Text("Hotkeys")
+            Text(L10n.hotkeys)
                 .font(.dodoTitle)
                 .foregroundColor(.dodoTextPrimary)
 
-            Text("Keyboard shortcuts for quick access")
+            Text(L10n.keyboardShortcutsDescription)
                 .font(.dodoBody)
                 .foregroundColor(.dodoTextSecondary)
         }
@@ -34,11 +39,11 @@ struct HotkeysView: View {
                     .foregroundColor(.dodoPrimary)
 
                 VStack(alignment: .leading, spacing: 4) {
-                    Text("Hotkeys coming soon")
+                    Text(L10n.hotkeysComingSoon)
                         .font(.dodoHeadline)
                         .foregroundColor(.dodoTextPrimary)
 
-                    Text("Global keyboard shortcuts will be available in a future update when hiding features are implemented.")
+                    Text(L10n.hotkeysWhenHidingFeatures)
                         .font(.dodoBody)
                         .foregroundColor(.dodoTextSecondary)
                 }
@@ -48,9 +53,9 @@ struct HotkeysView: View {
                 .background(Color.dodoBorder.opacity(0.2))
 
             VStack(alignment: .leading, spacing: 8) {
-                featureRow(icon: "eye.slash", text: "Toggle hidden items visibility")
-                featureRow(icon: "menubar.dock.rectangle", text: "Show/hide the DodoNest bar")
-                featureRow(icon: "command", text: "Customizable key combinations")
+                featureRow(icon: "eye.slash", text: L10n.toggleHiddenItemsVisibility)
+                featureRow(icon: "menubar.dock.rectangle", text: L10n.showHideDodoNestBar)
+                featureRow(icon: "command", text: L10n.customizableKeyCombinations)
             }
         }
         .padding(DodoNestDimensions.cardPadding)

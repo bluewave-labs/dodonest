@@ -66,10 +66,10 @@ enum NavigationItem: String, CaseIterable, Identifiable {
 
     var title: String {
         switch self {
-        case .layout: return "Layout"
-        case .appearance: return "Appearance"
-        case .hotkeys: return "Hotkeys"
-        case .settings: return "Settings"
+        case .layout: return L10n.layout
+        case .appearance: return L10n.appearance
+        case .hotkeys: return L10n.hotkeys
+        case .settings: return L10n.settings
         }
     }
 

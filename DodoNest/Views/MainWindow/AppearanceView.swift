@@ -1,6 +1,8 @@
 import SwiftUI
 
 struct AppearanceView: View {
+    @State private var currentLanguage = L10n.current
+
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: DodoNestDimensions.spacingLarge) {
@@ -12,15 +14,18 @@ struct AppearanceView: View {
             .padding(DodoNestDimensions.cardPaddingLarge)
         }
         .background(Color.dodoBackground)
+        .onReceive(NotificationCenter.default.publisher(for: .languageChanged)) { _ in
+            currentLanguage = L10n.current
+        }
     }
 
     private var header: some View {
         VStack(alignment: .leading, spacing: 4) {
-            Text("Appearance")
+            Text(L10n.appearance)
                 .font(.dodoTitle)
                 .foregroundColor(.dodoTextPrimary)
 
-            Text("Customize how your menu bar looks")
+            Text(L10n.customizeMenuBarLooks)
                 .font(.dodoBody)
                 .foregroundColor(.dodoTextSecondary)
         }
@@ -34,11 +39,11 @@ struct AppearanceView: View {
                     .foregroundColor(.dodoPrimary)
 
                 VStack(alignment: .leading, spacing: 4) {
-                    Text("Appearance options coming soon")
+                    Text(L10n.appearanceComingSoon)
                         .font(.dodoHeadline)
                         .foregroundColor(.dodoTextPrimary)
 
-                    Text("Customization features will be available in a future update.")
+                    Text(L10n.customizationFeaturesComingSoon)
                         .font(.dodoBody)
                         .foregroundColor(.dodoTextSecondary)
                 }
@@ -48,10 +53,10 @@ struct AppearanceView: View {
                 .background(Color.dodoBorder.opacity(0.2))
 
             VStack(alignment: .leading, spacing: 8) {
-                featureRow(icon: "arrow.left.and.right", text: "Adjust spacing between menu bar items")
-                featureRow(icon: "macbook", text: "Notch-aware layout for MacBook Pro/Air")
-                featureRow(icon: "paintpalette", text: "Tint colors and themes")
-                featureRow(icon: "shadow", text: "Shadows and visual effects")
+                featureRow(icon: "arrow.left.and.right", text: L10n.adjustSpacing)
+                featureRow(icon: "macbook", text: L10n.notchAwareLayout)
+                featureRow(icon: "paintpalette", text: L10n.tintColorsAndThemes)
+                featureRow(icon: "shadow", text: L10n.shadowsAndEffects)
             }
         }
         .padding(DodoNestDimensions.cardPadding)
