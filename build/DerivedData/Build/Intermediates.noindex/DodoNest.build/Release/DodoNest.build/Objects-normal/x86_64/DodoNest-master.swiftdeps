@@ -1,7 +1,7 @@
 version: "Apple Swift version 6.1 (swiftlang-6.1.0.110.21 clang-1700.0.13.3)"
 options: "f458d0d7248bdbd03d79799c7771b79e20d31a6c55a52e4e6c1638b11e23402b"
-build_start_time: [1769604435, 477239000]
-build_end_time: [1769604444, 256685000]
+build_start_time: [1769608425, 615653000]
+build_end_time: [1769608434, 430419000]
 inputs:
   "/Users/gorkemcetin/dodonest/DodoNest/App/AppDelegate.swift": [1769573243, 329033683]
   "/Users/gorkemcetin/dodonest/DodoNest/App/DodoNestApp.swift": [1769573356, 55702941]
@@ -27,4 +27,4 @@ inputs:
   "/Users/gorkemcetin/dodonest/DodoNest/Views/MenuBar/MenuBarPopoverView.swift": [1769573262, 815730143]
   "/Users/gorkemcetin/dodonest/DodoNest/Views/Permissions/AccessibilityPermissionView.swift": [1769573573, 98175370]
   ? "/Users/gorkemcetin/dodonest/build/DerivedData/Build/Intermediates.noindex/DodoNest.build/Release/DodoNest.build/DerivedSources/GeneratedAssetSymbols.swift"
-  : [1769604433, 905772509]
+  : [1769608423, 982086290]

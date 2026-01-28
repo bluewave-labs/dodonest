@@ -6,7 +6,7 @@
 	<integer>11</integer>
 	<key>logs</key>
 	<dict>
-		<key>DCB200F7-5282-44AD-85AC-A49A51D962CE</key>
+		<key>A2D00923-9799-4CAE-8A2F-9F39C4D5B6A8</key>
 		<dict>
 			<key>className</key>
 			<string>IDECommandLineBuildLog</string>
@@ -15,7 +15,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>DCB200F7-5282-44AD-85AC-A49A51D962CE.xcactivitylog</string>
+			<string>A2D00923-9799-4CAE-8A2F-9F39C4D5B6A8.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -40,15 +40,15 @@
 			<key>signature</key>
 			<string>Cleaning project DodoNest with scheme DodoNest and configuration Release</string>
 			<key>timeStartedRecording</key>
-			<real>791297231.36953104</real>
+			<real>791301221.26830196</real>
 			<key>timeStoppedRecording</key>
-			<real>791297231.72720206</real>
+			<real>791301221.65854704</real>
 			<key>title</key>
 			<string>Cleaning project DodoNest with scheme DodoNest and configuration Release</string>
 			<key>uniqueIdentifier</key>
-			<string>DCB200F7-5282-44AD-85AC-A49A51D962CE</string>
+			<string>A2D00923-9799-4CAE-8A2F-9F39C4D5B6A8</string>
 		</dict>
-		<key>F0C8CEF6-15B3-48AB-A846-A24857E7CC00</key>
+		<key>EC5971A6-E271-4612-9C73-DC1CA52CE169</key>
 		<dict>
 			<key>className</key>
 			<string>IDECommandLineBuildLog</string>
@@ -57,7 +57,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>F0C8CEF6-15B3-48AB-A846-A24857E7CC00.xcactivitylog</string>
+			<string>EC5971A6-E271-4612-9C73-DC1CA52CE169.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -82,13 +82,13 @@
 			<key>signature</key>
 			<string>Building project DodoNest with scheme DodoNest and configuration Release</string>
 			<key>timeStartedRecording</key>
-			<real>791297231.72941804</real>
+			<real>791301221.66043901</real>
 			<key>timeStoppedRecording</key>
-			<real>791297244.26094604</real>
+			<real>791301234.43470204</real>
 			<key>title</key>
 			<string>Building project DodoNest with scheme DodoNest and configuration Release</string>
 			<key>uniqueIdentifier</key>
-			<string>F0C8CEF6-15B3-48AB-A846-A24857E7CC00</string>
+			<string>EC5971A6-E271-4612-9C73-DC1CA52CE169</string>
 		</dict>
 	</dict>
 </dict>
