@@ -31,7 +31,7 @@ DodoNest uses macOS Accessibility APIs to simulate Command+drag operations, whic
 ### Homebrew
 
 ```bash
-brew tap bluewave-labs/dodonest
+brew tap dodoapps/tap
 brew install --cask dodonest
 ```
 
@@ -39,7 +39,7 @@ The Homebrew formula automatically removes the quarantine attribute, so the app 
 
 ### Manual installation
 
-1. Download the latest DMG from [Releases](https://github.com/bluewave-labs/dodonest/releases)
+1. Download the latest DMG from [Releases](https://github.com/dodoapps/dodonest/releases)
 2. Open the DMG and drag DodoNest to Applications
 3. Right-click and select "Open" on first launch, or run:
 
@@ -167,7 +167,7 @@ MIT License - see [LICENSE](LICENSE) for details.
 ## Acknowledgments
 
 - Inspired by [Bartender](https://www.macbartender.com/) and [Ice](https://github.com/jordanbaird/Ice)
-- Part of the Dodo app family ([DodoPulse](https://github.com/bluewave-labs/dodopulse), [DodoTidy](https://github.com/bluewave-labs/dodotidy), [DodoClip](https://github.com/bluewave-labs/dodoclip), [DodoNest](https://github.com/bluewave-labs/dodonest))
+- Part of the Dodo app family ([DodoPulse](https://github.com/dodoapps/dodopulse), [DodoTidy](https://github.com/dodoapps/dodotidy), [DodoClip](https://github.com/dodoapps/dodoclip), [DodoNest](https://github.com/dodoapps/dodonest))
 
 ## Support
 
